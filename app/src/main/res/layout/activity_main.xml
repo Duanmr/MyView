@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ResAuto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.example.xcroundprogressbardemo.view.AnswerChartView
+            android:id="@+id/rrv_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/bg_bule"
+            app:rrv_circleColor="#0553A4"
+            app:rrv_circleWidth="2dp"
+            app:rrv_ringColor="#fff000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余余额"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/tv_remain_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_remain_money"
+                android:text="9660万"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.example.xcroundprogressbardemo.view.MyProgress
+        android:id="@+id/MyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:progressBackgroundColor="#AAAAff"
+        app:progressColor="@color/colorAccent"
+        app:progressMun="5"
+        app:progressPointRadius="6dp"
+        app:progressWidth="4dp"
+        android:layout_margin="5dp"
+        app:progressTextColor="@color/colorAccent"
+        app:progressTextSize="34sp"
+        app:progressIsText="true"/>
+</LinearLayout>

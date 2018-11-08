@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆弧进度条-->
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringBgColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRateView">
+        <attr name="rrv_circleWidth" format="dimension" />
+        <attr name="rrv_circleColor" format="color"/>
+        <attr name="rrv_ringColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="MyProgress">
+        <!--进度条的背景色-->
+        <attr name="progressBackgroundColor" format="color"/>
+        <!--进度条的颜色-->
+        <attr name="progressColor" format="color"/>
+        <!--文字的颜色-->
+        <attr name="progressTextColor" format="color"/>
+        <!--文字的大小-->
+        <attr name="progressTextSize" format="dimension"/>
+        <!--进度条的宽-->
+        <attr name="progressWidth" format="dimension"/>
+        <!--进度指示点的半径-->
+        <attr name="progressPointRadius" format="dimension"/>
+        <!--需要多少个指示点-->
+        <attr name="progressMun" format="integer"/>
+        <!--是否需要字-->
+        <attr name="progressIsText" format="boolean"/>
+    </declare-styleable>
+</resources>
